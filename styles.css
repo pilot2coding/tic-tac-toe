@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Pixelify Sans", sans-serif;
+}
+
+
+body{
+    background-color: black;
+    color: #00FF15;
+    font: pixelify-sans;
+}
+
+
+#gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 0;
+    border-collapse: colapse;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 80px;
+    text-align: center;
+    
+}
+
+#square-0, #square-1, #square-2, #square-3, #square-4, #square-5 {
+    border-bottom: 6px dashed #00FF15;
+}
+
+#square-0, #square-1, #square-3, #square-6, #square-4, #square-7 {
+    border-right: 6px dashed #00FF15;
+}
+
+#user-interaction input{
+    background-color: black;
+    border: none;
+    color: #00FF15;
+}
+
+#user-interaction input::placeholder{
+    color: rgba(0, 255, 21, 0.4);
+}
+
+#user-interaction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#console-dialogue{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#console-dialogue h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#console-dialogue h3{
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+
+
+.player-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#player-one, #player-two{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    font-size: 20px;
+    text-align: center;
+}
+#player-one input, #player-two input {
+    width: 100%; 
+    text-align: center; 
+}
+
+#control-buttons button{
+    color: #00FF15;
+    background-color: black;
+    border: 2px dashed #00FF15;
+    margin-top: 20px;
+    margin-right: 10px;
+    font-size: 10px;
+    width: 100px;
+    height: 20px;
+}
+
